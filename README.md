@@ -9,8 +9,6 @@ Need to git clone https://github.com/BlackrockDigital/startbootstrap-modern-busi
 ## Some things to note by OrchardSkills (Orchard Skills, Inc.)
 - Removed Tags.OrchardCore.csproj from solution (needs more work to update to ASP.NET Core 3.1 and Orchard Core RC1).
 - Removed Multilingual pages (needs more work to update to ASP.NET Core 3.1 and Orchard Core RC1).
-- Boostrap needs to be updated (Security Alerts)
-- jQuery needs to be updated (Security Alerts)
 
 ## Some things to note by psijkof (Sijmen Koffeman)
 - Your modules project (.csproj) files, if using the Razor Pages framework, should be using the Razor sdk, like so:
