@@ -1,0 +1,48 @@
+﻿@page "{BlogPostTitle?}"
+@model Blog1Model
+
+@if (Model.BlogPost != null)
+{
+    <zone name="Header">
+        <partial name="/Areas/ModernBusiness.Pages.Shared/Pages/Shared/BreadcrumbHeader.cshtml" model="@Model.BlogPost" />
+    </zone>
+
+    <partial name="BlogPost" model="@Model.BlogPost" />
+}
+else
+{
+    <zone name="Header">
+        <partial name="/Areas/ModernBusiness.Pages.Shared/Pages/Shared/BreadcrumbHeader.cshtml" model="@Model.Blog" />
+    </zone>
+    <div class="row">
+        <div class="col-md-8">
+            <partial name="/Areas/ModernBusiness.Pages.Shared/Pages/Shared/BlogPostCard1.cshtml" model="@Model.PagerInfo" />
+
+            <partial name="/Areas/ModernBusiness.Pages.Shared/Pages/Shared/PagerControl.cshtml" model="Model.PagerInfo" />
+        </div>
+        <div class="col-md-4">
+
+            <!-- Search Widget -->
+            <div class="card mb-4">
+                <h5 class="card-header">Search</h5>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="button">Go!</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <partial name="/Areas/ModernBusiness.Pages.Shared/Pages/Shared/Categories.cshtml" />
+
+
+            <!-- Side Widget -->
+            <partial name="/Areas/ModernBusiness.Pages.Shared/Pages/Shared/SideWidget.cshtml" model="null" />
+
+        </div>
+    </div>
+}
+
+

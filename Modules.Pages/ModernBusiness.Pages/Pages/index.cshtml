@@ -1,0 +1,57 @@
+﻿@page
+@inject OrchardCore.Settings.ISiteService SiteService
+@{
+    var servicesContainer = (await Orchard.GetRecentContentItemsByContentTypeAsync("Services")).SingleOrDefault();
+    var servicesList = Orchard.GetRecentContentItemsByContentTypeAsync("Service", 3).GetAwaiter().GetResult().OrderBy(s => s.PublishedUtc);
+
+    var portfolioContainer = Orchard.GetRecentContentItemsByContentTypeAsync("Portfolio").GetAwaiter().GetResult().SingleOrDefault();
+    var projectsList = Orchard.GetRecentContentItemsByContentTypeAsync("Project", 3).GetAwaiter().GetResult().OrderBy(p => p.PublishedUtc);
+    var portfolioPager = new PagerInfo() { CurrentItemsOnPage = projectsList, CurrentPage = 1, PageBaseUrl = "/index", PageSize = 3, TotalPages = 1 };
+
+    var welcomeContent = await Orchard.GetContentItemByAliasAsync("alias:welcome");
+    var ctaHomePage = await Orchard.GetContentItemByAliasAsync("alias:ctaHomePage");
+}
+<zone name="Nav">
+</zone>
+<zone name="Header">
+    <partial name="Carousel" />
+</zone>
+<zone name="Messages">
+</zone>
+<zone name="Footer">
+</zone>
+
+<h1 class="my-4">@servicesContainer?.Content?.TitlePart.Title</h1>
+
+<!-- Marketing Icons Section -->
+<!-- /.row -->
+<!-- Portfolio Section -->
+
+
+<div class="row">
+    <partial name="/Areas/ModernBusiness.Pages.Shared/Pages/Shared/ProjectCards3.cshtml" model="portfolioPager" />
+</div>
+<!-- /.row -->
+
+<h2 class="Title">@servicesContainer.Content?.Services.Subheading.Text</h2>
+
+<div class="row">
+    <partial name="/Areas/ModernBusiness.Pages.Shared/Pages/Shared/ServiceCards.cshtml" model="servicesList" />
+</div>
+
+<h2 class="Title">@welcomeContent.Content.SubtitlePart.Subtitle.Text</h2>
+<!-- Features Section -->
+<div class="row features">
+    <div class="col-lg-6 indexBoxL">
+        @Html.Raw(welcomeContent.Content.HtmlBodyPart.Html)
+    </div>
+    <div class="col-lg-6 indexBoxR">
+        <img class="img-fluid rounded" asset-src="@welcomeContent.Content.RawContent.Images.Paths[0]" img-width="600" img-height="480" img-resize-mode="Crop" />
+    </div>
+</div>
+<!-- /.row -->
+
+<hr>
+
+<partial name="/Areas/ModernBusiness.Pages.Shared/Pages/Shared/CallToAction.cshtml" model="ctaHomePage" />
+

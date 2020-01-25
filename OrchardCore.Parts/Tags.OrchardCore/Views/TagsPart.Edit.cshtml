@@ -1,0 +1,23 @@
+﻿@model TagsPartViewModel
+@using Newtonsoft.Json;
+@using Newtonsoft.Json.Serialization;
+@using Tags.OrchardCore.Settings
+
+
+<style asp-src="/Tags.OrchardCore/Assets/css/tags.css"></style>
+<script asp-src="/Tags.OrchardCore/Assets/tag.js" at="Foot"></script>
+
+<fieldset class="form-group">
+    <label>Tags</label>
+    <br />
+    <input id="tagin" class="form-control" onkeypress="tagEditor()" />
+    <input id="tagout" asp-for="Tags" type="hidden"/>
+    <div id="showTags"  class="tags-input" data-name="tags-input">
+    </div>
+</fieldset>
+
+<script at="Foot">
+    existingTags('@Model.Tags');
+</script>
+
+

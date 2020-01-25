@@ -1,0 +1,17 @@
+﻿@page
+
+@model portfolio3Model
+
+@inject IContentItemDisplayManager DisplayManager
+
+<zone name="Nav"></zone>
+<zone name="Header">
+    <partial name="/Areas/ModernBusiness.Pages.Shared/Pages/Shared/BreadcrumbHeader.cshtml" model="Model.Portfolio" />
+</zone>
+<zone name="Messages"></zone>
+<zone name="Footer"></zone>
+
+<div class="row">
+    <partial name="/Areas/ModernBusiness.Pages.Shared/Pages/Shared/ProjectCards3.cshtml" model="Model.PagerInfo" />
+</div>
+<partial name="/Areas/ModernBusiness.Pages.Shared/Pages/Shared/PagerControl.cshtml" model="Model.PagerInfo">

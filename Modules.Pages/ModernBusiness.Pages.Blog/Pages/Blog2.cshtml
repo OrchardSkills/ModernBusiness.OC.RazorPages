@@ -1,0 +1,22 @@
+﻿@page "{BlogPostTitle?}"
+
+@model Blog2Model
+
+@if (Model.BlogPost != null)
+{
+    <zone name="Header">
+        <partial name="/Areas/ModernBusiness.Pages.Shared/Pages/Shared/BreadcrumbHeader.cshtml" model="@Model.BlogPost" />
+    </zone>
+
+    <partial name="BlogPost" model="@Model.BlogPost" />
+}
+else
+{
+    <zone name="Header">
+        <partial name="/Areas/ModernBusiness.Pages.Shared/Pages/Shared/BreadcrumbHeader.cshtml" model="@Model.Blog" />
+    </zone>
+
+    <partial name="/Areas/ModernBusiness.Pages.Shared/Pages/Shared/BlogPostCard2.cshtml" model="@Model.PagerInfo" />
+
+    <partial name="/Areas/ModernBusiness.Pages.Shared/Pages/Shared/PagerControl.cshtml" model="Model.PagerInfo" />
+}
