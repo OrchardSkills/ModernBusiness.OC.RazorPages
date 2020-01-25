@@ -1,8 +1,18 @@
 # ModernBusiness.OC.RazorPages
 
 Start Bootstrap's Modern Business Theme for Orchard Core as a decoupled Razor Pages Module written by psijkof (Sijmen Koffeman)
+This project has been updated to ASP.NET Core 3.1 and Orchard Core RC1 by OrchardSkills (Orchard Skills, Inc.)
 
-## Some things to note
+## Setup
+Need to git clone https://github.com/BlackrockDigital/startbootstrap-modern-business into src/Themes.Pages/ModernBusiness.Theme/wwwroot/
+
+## Some things to note by OrchardSkills (Orchard Skills, Inc.)
+- Removed Tags.OrchardCore.csproj from solution (needs more work to update to ASP.NET Core 3.1 and Orchard Core RC1).
+- Removed Multilingual pages (needs more work to update to ASP.NET Core 3.1 and Orchard Core RC1).
+- Boostrap needs to be updated (Security Alerts)
+- jQuery needs to be updated (Security Alerts)
+
+## Some things to note by psijkof (Sijmen Koffeman)
 - Your modules project (.csproj) files, if using the Razor Pages framework, should be using the Razor sdk, like so:
 `<Project Sdk="Microsoft.NET.Sdk.Razor">`
 - To have easy access to the OrchardHelper and related Orchard services, make sure your Razor Pages inherit from OrchardCore.DisplayManagement.RazorPages.Page like so `@inherits OrchardCore.DisplayManagement.RazorPages.Page`. This is done in _ViewImports.cshtml. This counts for razor views like partials as well, except, you inherit from OrchardCore.DisplayManagement.Razor.RazorPage<TModel> like so `@inherits OrchardCore.DisplayManagement.Razor.RazorPage<TModel>`
