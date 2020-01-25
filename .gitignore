@@ -120,3 +120,6 @@ App_Data/
 
 # Localization
 Localization/
+
+# Node
+package-lock.json
