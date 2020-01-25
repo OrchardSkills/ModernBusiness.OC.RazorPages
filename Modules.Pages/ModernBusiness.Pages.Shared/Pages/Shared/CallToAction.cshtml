@@ -6,7 +6,7 @@
 
         @if (Model.Content.MarkdownBodyPart != null)
         {
-            @Orchard.MarkdownToHtmlAsync((string)Model.Content.MarkdownBodyPart.Markdown);
+            @await Orchard.MarkdownToHtmlAsync((string)Model.Content.MarkdownBodyPart.Markdown);
         }
         else
         {

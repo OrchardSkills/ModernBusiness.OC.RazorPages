@@ -166,20 +166,25 @@
         {
           "Name": "BlogPost",
           "DisplayName": "Blog Post",
+          "Hidden":  false,
           "Settings": {
-            "Creatable": "False",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "False",
-            "Securable": "True",
-            "Stereotype": null
+            "ContentTypeSettings": {
+              "Creatable": "True",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "True",
+              "Securable": "True",
+              "Stereotype": null
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
               "PartName": "BlogPost",
               "Name": "BlogPost",
               "Settings": {
-                "Position": "2"
+                "ContentTypePartSettings": {
+                  "Position": "2"
+                }
               }
             },
             {
@@ -238,19 +243,23 @@
           "Name": "Blog",
           "DisplayName": "Blog",
           "Settings": {
-            "Creatable": "True",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "True",
-            "Securable": "True",
-            "Stereotype": null
+            "ContentTypeSettings": {
+              "Creatable": "True",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "True",
+              "Securable": "True",
+              "Stereotype": null
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
               "PartName": "Blog",
               "Name": "Blog",
               "Settings": {
-                "Position": "0"
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
               }
             },
             {
@@ -3059,8 +3068,8 @@
           "Project": {
             "Image": {
               "Paths": [
-                "678089-unsplash.jpg" 
-              ] 
+                "678089-unsplash.jpg"
+              ]
             },
             "Link": {
               "Url": null,
@@ -3428,7 +3437,7 @@
           "ContentItemId": "4rmdnk7cg1t4bxzan3gadn9ydk",
           "ContentItemVersionId": "48vnas3cw40rxywd33shga6wn9",
           "ContentType": "Customer",
-          "DisplayText":  "Customer Three",
+          "DisplayText": "Customer Three",
           "Latest": true,
           "Published": true,
           "ModifiedUtc": "2018-09-10T10:15:04.0224225Z",
@@ -3452,7 +3461,7 @@
           "ContentItemId": "4n3ag53mn2kaasjy7pbk3xaxm9",
           "ContentItemVersionId": "4rxa2wv7x07fe2batkvh0rbede",
           "ContentType": "Customer",
-          "DisplayText":  "Customer Four",
+          "DisplayText": "Customer Four",
           "Latest": true,
           "Published": true,
           "ModifiedUtc": "2018-09-10T10:15:15.0872294Z",
@@ -3490,7 +3499,7 @@
                 "707761-unsplash.jpg"
               ]
             }
-          },         
+          },
           "ContainedPart": {
             "ListContentItemId": "41jndpyg7x6c03qvxn2hp3spc0",
             "Order": 0
