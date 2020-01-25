@@ -23,13 +23,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModernBusiness.Pages.Servic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModernBusiness.Pages.Shared", "Modules.Pages\ModernBusiness.Pages.Shared\ModernBusiness.Pages.Shared.csproj", "{4603A80F-5887-4958-9690-F3BA34162385}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernBusiness.Pages.Static", "Modules.Pages\ModernBusiness.Pages.Static\ModernBusiness.Pages.Static.csproj", "{55527474-5D7D-430E-9156-17C2A4BDA48F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModernBusiness.Pages.Static", "Modules.Pages\ModernBusiness.Pages.Static\ModernBusiness.Pages.Static.csproj", "{55527474-5D7D-430E-9156-17C2A4BDA48F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernBusiness.Pages.Users", "Modules.Pages\ModernBusiness.Pages.Users\ModernBusiness.Pages.Users.csproj", "{C483408C-ECB9-4CC9-AD42-95C0E0FCE48E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModernBusiness.Pages.Users", "Modules.Pages\ModernBusiness.Pages.Users\ModernBusiness.Pages.Users.csproj", "{C483408C-ECB9-4CC9-AD42-95C0E0FCE48E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernBusiness.Theme", "Themes.Pages\ModernBusiness.Theme\ModernBusiness.Theme.csproj", "{57AB3F2E-092C-42A4-BF3C-3BDE8B9FB663}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModernBusiness.Theme", "Themes.Pages\ModernBusiness.Theme\ModernBusiness.Theme.csproj", "{57AB3F2E-092C-42A4-BF3C-3BDE8B9FB663}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernBusiness.Theme2", "Themes.Pages\ModernBusiness.Theme2\ModernBusiness.Theme2.csproj", "{352E840A-3E51-4981-B047-DC26F618EE8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModernBusiness.Theme2", "Themes.Pages\ModernBusiness.Theme2\ModernBusiness.Theme2.csproj", "{352E840A-3E51-4981-B047-DC26F618EE8E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{238D2537-D49C-4056-8E02-02A31FAA6FD7}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		Nuget.config = Nuget.config
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
