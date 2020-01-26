@@ -617,19 +617,23 @@
           "Name": "Services",
           "DisplayName": "Services",
           "Settings": {
-            "Creatable": "False",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "True",
-            "Securable": "True",
-            "Stereotype": null
+            "ContentTypeSettings": {
+              "Creatable": "True",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "True",
+              "Securable": "True",
+              "Stereotype": null
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
               "PartName": "Services",
               "Name": "Services",
               "Settings": {
-                "Position": "1"
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
               }
             },
             {
@@ -658,6 +662,13 @@
                 "ContentIndexSettings": {
                   "Included": true,
                   "Stored": true
+                },
+                "ContentTypePartSettings": {},
+                "ListPartSettings": {
+                  "PageSize": 10,
+                  "ContainedContentTypes": [
+                    "Service"
+                  ]
                 }
               }
             },
@@ -674,12 +685,14 @@
           "Name": "Portfolio",
           "DisplayName": "Portfolio",
           "Settings": {
-            "Creatable": "False",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "True",
-            "Securable": "True",
-            "Stereotype": null
+            "ContentTypeSettings": {
+              "Creatable": "True",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "True",
+              "Securable": "True",
+              "Stereotype": null
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
@@ -693,14 +706,22 @@
               "PartName": "ListPart",
               "Name": "ListPart",
               "Settings": {
-                "Position": "1",
-                "PageSize": "20",
+                "ContentTypePartSettings": {
+                  "Position": "1",
+                  "PageSize": "20"
+                },
                 "ContainedContentTypes": [
                   "Project"
                 ],
                 "ContentIndexSettings": {
                   "Included": true,
                   "Stored": true
+                },
+                "ListPartSettings": {
+                  "PageSize": 10,
+                  "ContainedContentTypes": [
+                    "Project"
+                  ]
                 }
               }
             },
@@ -1258,12 +1279,14 @@
           "Name": "FAQ",
           "DisplayName": "FAQ",
           "Settings": {
-            "Creatable": "True",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "True",
-            "Securable": "True",
-            "Stereotype": null
+            "ContentTypeSettings": {
+              "Creatable": "True",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "True",
+              "Securable": "True",
+              "Stereotype": null
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
@@ -1277,11 +1300,13 @@
               "PartName": "ListPart",
               "Name": "ListPart",
               "Settings": {
-                "Position": "3",
-                "DisplayName": null,
-                "Description": null,
-                "Editor": null,
-                "PageSize": "10",
+                "ContentTypePartSettings": {
+                  "Position": "3",
+                  "DisplayName": null,
+                  "Description": null,
+                  "Editor": null,
+                  "PageSize": "10"
+                },
                 "ContainedContentTypes": [
                   "QuestionAnswer"
                 ],

@@ -123,3 +123,6 @@ Localization/
 
 # Node
 package-lock.json
+
+# Orchard Core
+is-cache/
