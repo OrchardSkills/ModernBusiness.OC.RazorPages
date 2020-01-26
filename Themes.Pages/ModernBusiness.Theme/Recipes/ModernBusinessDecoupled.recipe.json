@@ -244,7 +244,7 @@
           "DisplayName": "Blog",
           "Settings": {
             "ContentTypeSettings": {
-              "Creatable": "True",
+              "Creatable": "false",
               "Draftable": "True",
               "Versionable": "True",
               "Listable": "True",
@@ -582,19 +582,23 @@
           "Name": "Service",
           "DisplayName": "Service",
           "Settings": {
-            "Creatable": "False",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "False",
-            "Securable": "True",
-            "Stereotype": null
+            "ContentTypeSettings": {
+              "Creatable": "True",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "False",
+              "Securable": "True",
+              "Stereotype": null
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
               "PartName": "Service",
               "Name": "Service",
               "Settings": {
-                "Position": "0"
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
               }
             },
             {
@@ -618,7 +622,7 @@
           "DisplayName": "Services",
           "Settings": {
             "ContentTypeSettings": {
-              "Creatable": "True",
+              "Creatable": "False",
               "Draftable": "True",
               "Versionable": "True",
               "Listable": "True",
@@ -686,7 +690,7 @@
           "DisplayName": "Portfolio",
           "Settings": {
             "ContentTypeSettings": {
-              "Creatable": "True",
+              "Creatable": "false",
               "Draftable": "True",
               "Versionable": "True",
               "Listable": "True",
@@ -752,58 +756,62 @@
           "Name": "Project",
           "DisplayName": "Project",
           "Settings": {
-            "Creatable": "False",
-            "Draftable": "False",
-            "Versionable": "False",
-            "Listable": "False",
-            "Securable": "False",
-            "Stereotype": null
+              "ContentTypeSettings": {
+                "Creatable": "True",
+                "Draftable": "True",
+                "Versionable": "True",
+                "Listable": "True",
+                "Securable": "True",
+                "Stereotype": null
+              }
+            },
+            "ContentTypePartDefinitionRecords": [
+              {
+                "PartName": "Project",
+                "Name": "Project",
+                "Settings": {
+                  "ContentTypePartSettings": {
+                    "Position": "0"
+                  }
+                }
+              },
+              {
+                "PartName": "HtmlBodyPart",
+                "Name": "HtmlBodyPart",
+                "Settings": {
+                  "Position": "1"
+                }
+              },
+              {
+                "PartName": "TitlePart",
+                "Name": "TitlePart",
+                "Settings": {
+                  "Position": "2"
+                }
+              },
+              {
+                "PartName": "SubtitlePart",
+                "Name": "SubtitlePart",
+                "Settings": {
+                  "Position": "1"
+                }
+              },
+              {
+                "PartName": "AutoroutePart",
+                "Name": "AutoroutePart",
+                "Settings": {
+                  "Position": "1",
+                  "DisplayName": null,
+                  "Description": null,
+                  "Editor": null,
+                  "Pattern": "{{ ContentItem | container | display_text | slugify }}/{{ ContentItem | display_text | slugify }}",
+                  "AllowCustomPath": "True",
+                  "ShowHomepageOption": "False",
+                  "ContentIndexSettings": {}
+                }
+              }
+            ]
           },
-          "ContentTypePartDefinitionRecords": [
-            {
-              "PartName": "Project",
-              "Name": "Project",
-              "Settings": {
-                "Position": "0"
-              }
-            },
-            {
-              "PartName": "HtmlBodyPart",
-              "Name": "HtmlBodyPart",
-              "Settings": {
-                "Position": "1"
-              }
-            },
-            {
-              "PartName": "TitlePart",
-              "Name": "TitlePart",
-              "Settings": {
-                "Position": "2"
-              }
-            },
-            {
-              "PartName": "SubtitlePart",
-              "Name": "SubtitlePart",
-              "Settings": {
-                "Position": "1"
-              }
-            },
-            {
-              "PartName": "AutoroutePart",
-              "Name": "AutoroutePart",
-              "Settings": {
-                "Position": "1",
-                "DisplayName": null,
-                "Description": null,
-                "Editor": null,
-                "Pattern": "{{ ContentItem | container | display_text | slugify }}/{{ ContentItem | display_text | slugify }}",
-                "AllowCustomPath": "True",
-                "ShowHomepageOption": "False",
-                "ContentIndexSettings": {}
-              }
-            }
-          ]
-        },
         {
           "Name": "Team",
           "DisplayName": "Team",
