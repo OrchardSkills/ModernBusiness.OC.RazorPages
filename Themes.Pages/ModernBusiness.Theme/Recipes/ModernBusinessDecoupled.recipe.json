@@ -459,12 +459,14 @@
           "Name": "Page",
           "DisplayName": "Page",
           "Settings": {
-            "Creatable": "True",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "True",
-            "Securable": "True",
-            "Stereotype": null
+            "ContentTypeSettings": {
+              "Creatable": "True",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "True",
+              "Securable": "True",
+              "Stereotype": null
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
@@ -478,7 +480,9 @@
               "PartName": "AutoroutePart",
               "Name": "AutoroutePart",
               "Settings": {
-                "Position": "1",
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                },
                 "ContentIndexSettings": {
                   "Included": false,
                   "Stored": false,
@@ -519,19 +523,23 @@
           "Name": "Slide",
           "DisplayName": "Slide",
           "Settings": {
-            "Creatable": "False",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "True",
-            "Securable": "True",
-            "Stereotype": null
+            "ContentTypeSettings": {
+              "Creatable": "True",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "True",
+              "Securable": "True",
+              "Stereotype": null
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
               "PartName": "Slide",
               "Name": "Slide",
               "Settings": {
-                "Position": "0"
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
               }
             },
             {
@@ -547,19 +555,23 @@
           "Name": "Carousel",
           "DisplayName": "Carousel",
           "Settings": {
-            "Creatable": "False",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "True",
-            "Securable": "True",
-            "Stereotype": "Widget"
+            "ContentTypeSettings": {
+              "Creatable": "False",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "True",
+              "Securable": "True",
+              "Stereotype": "Widget"
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
               "PartName": "Carousel",
               "Name": "Carousel",
               "Settings": {
-                "Position": "0"
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
               }
             },
             {
