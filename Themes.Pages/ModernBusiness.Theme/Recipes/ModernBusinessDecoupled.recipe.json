@@ -350,7 +350,7 @@
             "Creatable": "False",
             "Draftable": "True",
             "Versionable": "True",
-            "Listable": "False",
+            "Listable": "True",
             "Securable": "True",
             "Stereotype": "Widget"
           },
@@ -380,7 +380,9 @@
               "PartName": "LiquidPart",
               "Name": "LiquidPart",
               "Settings": {
-                "Position": "0"
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
               }
             }
           ]
@@ -389,19 +391,23 @@
           "Name": "Image",
           "DisplayName": "Image",
           "Settings": {
-            "Creatable": "False",
-            "Draftable": "False",
-            "Versionable": "True",
-            "Listable": "False",
-            "Securable": "False",
-            "Stereotype": null
+            "ContentTypeSettings": {
+              "Creatable": "False",
+              "Draftable": "False",
+              "Versionable": "True",
+              "Listable": "True",
+              "Securable": "False",
+              "Stereotype": null
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
               "PartName": "Image",
               "Name": "Image",
               "Settings": {
-                "Position": "0"
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
               }
             },
             {
@@ -417,19 +423,23 @@
           "Name": "Paragraph",
           "DisplayName": "Paragraph",
           "Settings": {
-            "Creatable": "False",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "False",
-            "Securable": "True",
-            "Stereotype": "Widget"
-          },
+              "ContentTypeSettings": {
+                "Creatable": "False",
+                "Draftable": "True",
+                "Versionable": "True",
+                "Listable": "True",
+                "Securable": "True",
+                "Stereotype": "Widget"
+              }
+            },
           "ContentTypePartDefinitionRecords": [
             {
               "PartName": "Paragraph",
               "Name": "Paragraph",
               "Settings": {
-                "Position": "0"
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
               }
             }
           ]
@@ -473,7 +483,9 @@
               "PartName": "Page",
               "Name": "Page",
               "Settings": {
-                "Position": "3"
+                "ContentTypePartSettings": {
+                  "Position": "3"
+                }
               }
             },
             {
@@ -598,7 +610,7 @@
               "Creatable": "True",
               "Draftable": "True",
               "Versionable": "True",
-              "Listable": "False",
+              "Listable": "True",
               "Securable": "True",
               "Stereotype": null
             }
@@ -828,12 +840,14 @@
           "Name": "Team",
           "DisplayName": "Team",
           "Settings": {
-            "Creatable": "True",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "True",
-            "Securable": "True",
-            "Stereotype": null
+            "ContentTypeSettings": {
+              "Creatable": "True",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "True",
+              "Securable": "True",
+              "Stereotype": null
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
@@ -847,8 +861,10 @@
               "PartName": "ListPart",
               "Name": "ListPart",
               "Settings": {
-                "Position": "2",
-                "PageSize": "10",
+                "ContentTypePartSettings": {
+                  "Position": "2",
+                  "PageSize": "10"
+                },
                 "ContainedContentTypes": [
                   "TeamMember"
                 ],
@@ -875,19 +891,23 @@
           "Name": "TeamMember",
           "DisplayName": "TeamMember",
           "Settings": {
-            "Creatable": "False",
-            "Draftable": "False",
-            "Versionable": "False",
-            "Listable": "False",
-            "Securable": "False",
-            "Stereotype": null
+            "ContentTypeSettings": {
+              "Creatable": "True",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "True",
+              "Securable": "True",
+              "Stereotype": null
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
               "PartName": "TeamMember",
               "Name": "TeamMember",
               "Settings": {
-                "Position": "2"
+                "ContentTypePartSettings": {
+                  "Position": "2"
+                }
               }
             },
             {
@@ -910,19 +930,23 @@
           "Name": "Customers",
           "DisplayName": "Customers",
           "Settings": {
-            "Creatable": "True",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "True",
-            "Securable": "True",
-            "Stereotype": null
+            "ContentTypeSettings": {
+              "Creatable": "False",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "True",
+              "Securable": "True",
+              "Stereotype": null
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
               "PartName": "Customers",
               "Name": "Customers",
               "Settings": {
-                "Position": "3"
+                "ContentTypePartSettings": {
+                  "Position": "3"
+                }
               }
             },
             {
@@ -957,19 +981,23 @@
           "Name": "Customer",
           "DisplayName": "Customer",
           "Settings": {
-            "Creatable": "False",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "False",
-            "Securable": "True",
-            "Stereotype": null
+            "ContentTypeSettings": {
+              "Creatable": "False",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "False",
+              "Securable": "True",
+              "Stereotype": null
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
               "PartName": "Customer",
               "Name": "Customer",
               "Settings": {
-                "Position": "0"
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
               }
             },
             {
@@ -985,7 +1013,10 @@
           "Name": "Form",
           "DisplayName": "Form",
           "Settings": {
-            "Stereotype": "Widget"
+            "ContentTypeSettings": {
+              "Listable": "True",
+              "Stereotype": "Widget"
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
@@ -1171,26 +1202,32 @@
           "Name": "Pricing",
           "DisplayName": "Pricing",
           "Settings": {
-            "Creatable": "True",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "True",
-            "Securable": "True",
-            "Stereotype": null
+            "ContentTypeSettings": {
+              "Creatable": "True",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "True",
+              "Securable": "True",
+              "Stereotype": null
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
               "PartName": "TitlePart",
               "Name": "TitlePart",
               "Settings": {
-                "Position": "0"
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
               }
             },
             {
               "PartName": "Pricing",
               "Name": "Pricing",
               "Settings": {
-                "Position": "4"
+                "ContentTypePartSettings": {
+                  "Position": "4"
+                }
               }
             },
             {
@@ -1212,14 +1249,18 @@
               "PartName": "SubtitlePart",
               "Name": "SubtitlePart",
               "Settings": {
-                "Position": "2"
+                "ContentTypePartSettings": {
+                  "Position": "2"
+                }
               }
             },
             {
               "PartName": "AliasPart",
               "Name": "AliasPart",
               "Settings": {
-                "Position": "1"
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
               }
             }
           ]
@@ -1228,26 +1269,32 @@
           "Name": "PricePlan",
           "DisplayName": "PricePlan",
           "Settings": {
-            "Creatable": "False",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "False",
-            "Securable": "True",
-            "Stereotype": null
+            "ContentTypeSettings": {
+              "Creatable": "True",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "True",
+              "Securable": "True",
+              "Stereotype": null
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
               "PartName": "PricePlan",
               "Name": "PricePlan",
               "Settings": {
-                "Position": "2"
+                "ContentTypePartSettings": {
+                  "Position": "2"
+                }
               }
             },
             {
               "PartName": "TitlePart",
               "Name": "TitlePart",
               "Settings": {
-                "Position": "0"
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
               }
             },
             {
@@ -1271,19 +1318,23 @@
           "Name": "Features",
           "DisplayName": "Features",
           "Settings": {
-            "Creatable": "False",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "False",
-            "Securable": "True",
-            "Stereotype": null
+            "ContentTypeSettings": {
+              "Creatable": "False",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "True",
+              "Securable": "True",
+              "Stereotype": null
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
               "PartName": "Features",
               "Name": "Features",
               "Settings": {
-                "Position": "1"
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
               }
             },
             {
@@ -1313,7 +1364,9 @@
               "PartName": "FAQ",
               "Name": "FAQ",
               "Settings": {
-                "Position": "4"
+                "ContentTypePartSettings": {
+                  "Position": "4"
+                }
               }
             },
             {
@@ -1337,7 +1390,9 @@
               "PartName": "TitlePart",
               "Name": "TitlePart",
               "Settings": {
-                "Position": "0"
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
               }
             },
             {
@@ -1360,12 +1415,14 @@
           "Name": "QuestionAnswer",
           "DisplayName": "Question/Answer",
           "Settings": {
-            "Creatable": "False",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "False",
-            "Securable": "True",
-            "Stereotype": null
+            "ContentTypeSettings": {
+              "Creatable": "False",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "True",
+              "Securable": "True",
+              "Stereotype": null
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
@@ -1395,12 +1452,14 @@
           "Name": "RawContent",
           "DisplayName": "RawContent",
           "Settings": {
-            "Creatable": "False",
-            "Draftable": "True",
-            "Versionable": "True",
-            "Listable": "False",
-            "Securable": "True",
-            "Stereotype": null
+            "ContentTypeSettings": {
+              "Creatable": "False",
+              "Draftable": "True",
+              "Versionable": "True",
+              "Listable": "True",
+              "Securable": "True",
+              "Stereotype": null
+            }
           },
           "ContentTypePartDefinitionRecords": [
             {
@@ -2315,7 +2374,7 @@
                   "Title": "Contact Form Submitted"
                 },
                 "HttpMethod": "POST",
-                "Url": "/workflows/Invoke?token=CfDJ8BUrprGrGapOtfuALvZoyXSWLvKptV5Wm7E79MqPCK8azm81sfz_mth6fPPfM-Y1MaMLXJujv4Y9Vk_g7ttB_NLIYxsqKpxp0BqPuHDRURv6zK4AKoyyWnfRCJNbnR638HkS3mxEp5m-bTOTmfQX6PaRPl54nijUmtUcuWqJGig9kIrr9b9H6-JkM2mY7nfDFBP3I4mh1RhKxj8NX_raLeT9Ps5y4YJRQsB4ZdvwkQom",
+                "Url": "/workflows/Invoke?token=CfDJ8Gu0Kz15KKdHmw8Yoq97y2ud8ffSRxevudgELFOzE17JeYI4HwS_g9PmQUOfQFh881gy77BCGwIj31bFVBnOGT6OMukqwrB88Jj_lZVYJyNrSySEjc-d3o4yCTjW9rOKAlFttABA9QWA0anyJw2n9Gx3BKoZG2Xt30VaAnbjzGhIOVlV2C6acTtNC431XD6s9iKG5FN-hW4ucoozN4Dzp2Gsc1hQoiNsLWNuuxAdIfE5",
                 "ValidateAntiforgeryToken": true,
                 "TokenLifeSpan": 0
               }
@@ -4655,7 +4714,7 @@
             "Title": "Contact"
           },
           "FormPart": {
-            "Action": "/workflows/Invoke?token=CfDJ8BUrprGrGapOtfuALvZoyXSWLvKptV5Wm7E79MqPCK8azm81sfz_mth6fPPfM-Y1MaMLXJujv4Y9Vk_g7ttB_NLIYxsqKpxp0BqPuHDRURv6zK4AKoyyWnfRCJNbnR638HkS3mxEp5m-bTOTmfQX6PaRPl54nijUmtUcuWqJGig9kIrr9b9H6-JkM2mY7nfDFBP3I4mh1RhKxj8NX_raLeT9Ps5y4YJRQsB4ZdvwkQom",
+            "Action": "/workflows/Invoke?token=CfDJ8Gu0Kz15KKdHmw8Yoq97y2ud8ffSRxevudgELFOzE17JeYI4HwS_g9PmQUOfQFh881gy77BCGwIj31bFVBnOGT6OMukqwrB88Jj_lZVYJyNrSySEjc-d3o4yCTjW9rOKAlFttABA9QWA0anyJw2n9Gx3BKoZG2Xt30VaAnbjzGhIOVlV2C6acTtNC431XD6s9iKG5FN-hW4ucoozN4Dzp2Gsc1hQoiNsLWNuuxAdIfE5",
             "Method": "POST",
             "WorkflowTypeId": null
           },
