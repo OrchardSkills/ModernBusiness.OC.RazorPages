@@ -6,12 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="OrchardCore.Contents" Version="1.0.0-rc1-11612" />
-    <PackageReference Include="OrchardCore.Menu" Version="1.0.0-rc1-11612" />
-    <PackageReference Include="OrchardCore.Theme.Targets" Version="1.0.0-rc1-11612" />
-    <PackageReference Include="OrchardCore.ContentManagement" Version="1.0.0-rc1-11612" />
-    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.0.0-rc1-11612" />
-    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.0.0-rc1-11612" />  </ItemGroup>
+    <PackageReference Include="OrchardCore.Contents" Version="1.0.0-rc1-11653" />
+    <PackageReference Include="OrchardCore.Menu" Version="1.0.0-rc1-11653" />
+    <PackageReference Include="OrchardCore.Theme.Targets" Version="1.0.0-rc1-11653" />
+    <PackageReference Include="OrchardCore.ContentManagement" Version="1.0.0-rc1-11653" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.0.0-rc1-11653" />
+    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.0.0-rc1-11653" />  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Modules.Pages\ModernBusiness.Pages.About\ModernBusiness.Pages.About.csproj" />

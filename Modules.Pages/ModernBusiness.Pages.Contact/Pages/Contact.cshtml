@@ -5,12 +5,12 @@
 }
 
 @functions {
-[FromRoute]
-public string ThankYou { get; set; }
+    [FromRoute]
+    public string ThankYou { get; set; }
 }
 
 <zone name="Header">
-    <partial name="/Areas/ModernBusiness.Pages.Shared/Pages/Shared/BreadcrumbHeader.cshtml" model="@form"/>
+    <partial name="/Areas/ModernBusiness.Pages.Shared/Pages/Shared/BreadcrumbHeader.cshtml" model="@form" />
 </zone>
 @if (!string.IsNullOrEmpty(ThankYou))
 {
@@ -61,6 +61,27 @@ else
             @await DisplayAsync(await DisplayManager.BuildDisplayAsync(form, null, "Detail"))
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 <zone name="Header">
